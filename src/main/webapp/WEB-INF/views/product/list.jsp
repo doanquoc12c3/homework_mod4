@@ -61,13 +61,13 @@
             <tbody>
             <c:forEach var="product" items="${products}" varStatus="loop">
               <tr>
-                <td class="align-middle"> ${loop.count}</td>
-                <td class="align-middle">${product.name}</td>
-                <td class="align-middle">${product.price}</td>
-                <td class="align-middle">${product.description}</td>
-                <td class="align-middle"> <img src="${product.imgURL}" alt="" style="width: 20vw;height:20vh "></td>
-                <td class="align-middle"><a href="/products/edit/${product.id}"><button type="button" class="btn btn-primary"> <i class="far fa-edit"></i> Edit</button></a></td>
-                <td class="align-middle"><a href="/products/delete/${product.id}"><button type="button" class="btn btn-danger"><i class="fas fa-eraser"></i> Delete</button></a></td>
+                <td class="align-middle text-center"> ${loop.count}</td>
+                <td class="align-middle text-center">${product.name}</td>
+                <td class="align-middle text-center">${product.price}</td>
+                <td class="align-middle text-center">${product.description}</td>
+                <td class="align-middle text-center"> <img src="${product.imgURL}" alt="" style="width: 20vw;height:20vh "></td>
+                <td class="align-middle text-center"><a href="/products/edit/${product.id}"><button type="button" class="btn btn-primary"> <i class="far fa-edit"></i> Edit</button></a></td>
+                <td class="align-middle text-center "><a href="/products/delete/${product.id}"><button type="button" class="btn btn-danger"><i class="fas fa-eraser"></i> Delete</button></a></td>
               </tr>
             </c:forEach>
             </tbody>
