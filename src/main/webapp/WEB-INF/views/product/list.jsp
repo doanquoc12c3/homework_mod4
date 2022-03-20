@@ -50,24 +50,24 @@
         <blockquote class="blockquote mb-0">
           <table class = "table table-bordered" >
             <thead>
-            <th>#</th>
-            <th>Name</th>
-            <th>Price</th>
+            <th class="text-center">#</th>
+            <th class="text-center">Name</th>
+            <th class="text-center">Price</th>
 
-            <th>Description</th>
-            <th>Image</th>
-            <th colspan="2">Action</th>
+            <th class="text-center">Description</th>
+            <th class="text-center">Image</th>
+            <th colspan="2" class="text-center">Action</th>
             </thead>
             <tbody>
             <c:forEach var="product" items="${products}" varStatus="loop">
               <tr>
-                <td>${loop.count}</td>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td>${product.description}</td>
-                <td> <img src="${product.imgURL}" alt="" style="width: 20vw;height:20vh "></td>
-                <td><a href="/products/edit/${product.id}"><button type="button" class="btn btn-primary"> <i class="far fa-edit"></i> Edit</button></a></td>
-                <td><a href="/products/delete/${product.id}"><button type="button" class="btn btn-danger"><i class="fas fa-eraser"></i> Delete</button></a></td>
+                <td class="align-middle"> ${loop.count}</td>
+                <td class="align-middle">${product.name}</td>
+                <td class="align-middle">${product.price}</td>
+                <td class="align-middle">${product.description}</td>
+                <td class="align-middle"> <img src="${product.imgURL}" alt="" style="width: 20vw;height:20vh "></td>
+                <td class="align-middle"><a href="/products/edit/${product.id}"><button type="button" class="btn btn-primary"> <i class="far fa-edit"></i> Edit</button></a></td>
+                <td class="align-middle"><a href="/products/delete/${product.id}"><button type="button" class="btn btn-danger"><i class="fas fa-eraser"></i> Delete</button></a></td>
               </tr>
             </c:forEach>
             </tbody>
